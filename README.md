@@ -1,2 +1,3 @@
 # TsLearning
-my test repo
+
+My promo repository
