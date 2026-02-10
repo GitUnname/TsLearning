@@ -16,12 +16,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # полная история (опционально, но рекомендуется)
+          fetch-depth: 0
 
       - name: Create or update Pull Request
         uses: repo-sync/pull-request@v2
         with:
-          destination_branch: main
+          destination_branch: master
           pr_title: "feat: ${{ github.ref_name }}"
           pr_body: |
             ## Что сделано
